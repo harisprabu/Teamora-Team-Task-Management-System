@@ -1,0 +1,479 @@
+.admin-layout {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #FFF4DF;
+}
+
+
+/* Sidebar */
+
+.admin-sidebar {
+  width: 250px;
+
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  border-right: 1px solid #eee;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 25px 15px;
+}
+
+
+.admin-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 24px;
+
+  font-weight: bold;
+
+  color: #FF7B00;
+
+  padding: 0 10px;
+
+  margin-bottom: 40px;
+}
+
+
+.admin-logo-icon {
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 10px;
+
+  background: #FF7B00;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+/* Navigation */
+
+.admin-nav {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.admin-nav button {
+  border: none;
+
+  background: transparent;
+
+  padding: 13px 15px;
+
+  border-radius: 8px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  color: #555;
+
+  font-size: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.admin-nav button:hover {
+  background: #FFF4DF;
+
+  color: #FF7B00;
+}
+
+
+.admin-nav button.active {
+  background: #FF7B00;
+
+  color: white;
+}
+
+
+/* Logout */
+
+.logout-btn {
+  margin-top: auto;
+
+  border: none;
+
+  background: #fff0e5;
+
+  color: #FF7B00;
+
+  padding: 13px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 15px;
+}
+
+
+.logout-btn:hover {
+  background: #FF7B00;
+
+  color: white;
+}
+
+
+/* Main */
+
+.admin-main {
+  flex: 1;
+}
+
+
+/* Topbar */
+
+.admin-topbar {
+  height: 70px;
+
+  background: white;
+
+  border-bottom: 1px solid #eee;
+
+  padding: 0 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.admin-topbar h2 {
+  color: #333;
+}
+
+
+.admin-profile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #0A5A99;
+
+  font-weight: 600;
+}
+
+
+.admin-profile svg {
+  font-size: 22px;
+}
+
+
+/* Content */
+
+.admin-content {
+  padding: 35px;
+}
+
+
+.admin-content h1 {
+  margin-bottom: 8px;
+}
+
+
+.admin-content > p {
+  color: #777;
+}
+
+
+/* Cards */
+
+.admin-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+
+.admin-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+.admin-card svg {
+  color: #FF7B00;
+
+  font-size: 25px;
+
+  margin-bottom: 15px;
+}
+
+
+.admin-card h3 {
+  margin-bottom: 10px;
+
+  color: #555;
+}
+
+
+.admin-card strong {
+  font-size: 28px;
+
+  color: #FF7B00;
+}
+
+
+/* Management */
+
+.management-section {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+.management-section p {
+  color: #777;
+
+  margin-bottom: 25px;
+}
+
+
+.empty-message {
+  padding: 40px;
+
+  text-align: center;
+
+  background: #FFF4DF;
+
+  border-radius: 10px;
+
+  color: #777;
+}
+
+
+/* admin dashboard */
+.member-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.member-table th,
+.member-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.member-table th {
+  background: #FFF4DF;
+  color: #555;
+  font-weight: 600;
+}
+
+.member-table tr:hover {
+  background: #fffaf3;
+}
+
+.pending-status {
+  background: #fff0e5;
+  color: #FF7B00;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.approve-btn,
+.reject-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.approve-btn {
+  background: #e8f7ee;
+  color: #218838;
+}
+
+.approve-btn:hover {
+  background: #218838;
+  color: white;
+}
+
+.reject-btn {
+  background: #ffe8e8;
+  color: #dc3545;
+}
+
+.reject-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* css of all members */
+.member-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.member-table th,
+.member-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.member-table th {
+  background: #FFF4DF;
+  color: #555;
+  font-weight: 600;
+}
+
+.member-table tr:hover {
+  background: #fffaf3;
+}
+
+.pending-status {
+  background: #fff0e5;
+  color: #FF7B00;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.approve-btn,
+.reject-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.approve-btn {
+  background: #e8f7ee;
+  color: #218838;
+}
+
+.approve-btn:hover {
+  background: #218838;
+  color: white;
+}
+
+.reject-btn {
+  background: #ffe8e8;
+  color: #dc3545;
+}
+
+.reject-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.approved-status {
+  background: #e8f7ee;
+  color: #218838;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.deactivated-status {
+  background: #ffe8e8;
+  color: #dc3545;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.deactivate-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #ffe8e8;
+  color: #dc3545;
+}
+
+.deactivate-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.activate-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #e8f7ee;
+  color: #218838;
+}
+
+.activate-btn:hover {
+  background: #218838;
+  color: white;
+}
